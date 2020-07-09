@@ -20,6 +20,7 @@ public class Main {
         else{
             //here if the result is true
             System.out.println("Element found at index " + result);
+            System.out.println();
         }
 
     }

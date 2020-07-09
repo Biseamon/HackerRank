@@ -78,7 +78,7 @@ public class Main {
 
         System.out.println("After deletion at a specific position");
         linkedList.deleteAtPosition(5);
-        linkedList.printList();
+        linkedList.printList();         
 
     }
 
