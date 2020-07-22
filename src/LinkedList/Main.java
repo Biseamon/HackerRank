@@ -77,9 +77,16 @@ public class Main {
         linkedList.printList();
 
         System.out.println("After deletion at a specific position");
-        linkedList.deleteAtPosition(5);
-        linkedList.printList();         
+        linkedList.deleteAtPosition(4);
+        linkedList.printList();
+
+        //Checking if Object.next.next returns anything.
+        System.out.println(secondItem.next.next);
+        System.out.println("------------------------------");
+
+        //Checking the printNext
+        System.out.println("Lets see if head.next.next return something");
+        linkedList.printNext();
 
     }
-
 }

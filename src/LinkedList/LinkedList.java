@@ -26,6 +26,20 @@ public class LinkedList {
 
     }
 
+    public void printNext() {
+
+        Node current = head;
+
+        try {
+            while (current != null) {
+                System.out.println(current.data + " ");
+                current = current.next.next;
+            }
+        }catch (NullPointerException e){
+            System.out.println("List ends here: " + e.getMessage());
+        }
+    }
+
     //push a new Node with a different value in the place of the head.
     //Basically adds a new item at the front.
     public void push(int new_item){
@@ -160,6 +174,5 @@ public class LinkedList {
         temp.next = nextNode;
 
     }
-
 
 }
